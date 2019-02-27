@@ -33,4 +33,10 @@ tasks.withType(Test) {
 }
 
 
+task smoke(type: Test){
+    useJUnitPlatform(){
+        includeTags 'smoke'
+    }
+}
+
 
